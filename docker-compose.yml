@@ -1,0 +1,15 @@
+version: "3.1"
+services:
+  api:
+    image: epiccrane/emmyclef_backend:latest
+    ports:
+      - 8000:8008
+    # volumes:
+    #   - ./api:/api
+  #   command: bash -c “python manage.py runserver 0.0.0.0:8000"
+  web:
+    image: epiccrane/emmyclef_frontend:latest
+    ports:
+      - 3000:3000
+    # volumes:
+    #   - ./frontend:/frontend
